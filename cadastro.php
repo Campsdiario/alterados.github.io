@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isHTML(true); // Define o formato do e-mail como HTML
         $mail->Subject = 'Confirmação de Cadastro';
         $mail->Body    = 'Olá! Seu cadastro foi realizado com sucesso. Clique no link abaixo para completar seu cadastro:<br>';
-        $mail->Body   .= '<a href="http://seusite.com/continuar_cadastro.php?token=' . $token . '">Clique aqui para continuar o cadastro</a>';
+        $mail->Body   .= '<a href="https://campsdiario.github.io/alterados.github.io/continuar_cadastro.php?token=' . $token . '">Clique aqui para continuar o cadastro</a>';
 
         // Ativar saída de depuração detalhada
         $mail->SMTPDebug = 2;
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="hero">
